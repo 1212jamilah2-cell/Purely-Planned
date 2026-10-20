@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Purely Planned | Custom Digital Planners & Printables</title>
+    <!-- Tailwind CSS for clean, modern, un-cluttered UI styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+    </style>
+</head>
+<body class="bg-stone-50 text-stone-800 antialiased">
+
+    <!-- Navigation Header -->
+    <header class="bg-white border-b border-stone-200 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <span class="text-2xl font-bold tracking-tight text-emerald-700">Purely Planned</span>
+                <span class="text-xs bg-emerald-100 text-emerald-800 px-2.5 py-1 rounded-full font-medium">Digital Studio</span>
+            </div>
+            <nav class="hidden md:flex space-x-8 text-sm font-medium text-stone-600">
+                <a href="#builder" class="hover:text-emerald-700 transition">Custom Builder</a>
+                <a href="#features" class="hover:text-emerald-700 transition">Popular Features</a>
+                <a href="#tiers" class="hover:text-emerald-700 transition">Editions</a>
+                <a href="#companion" class="hover:text-emerald-700 transition">Hydration Pet</a>
+            </nav>
+            <div>
+                <a href="#builder" class="bg-emerald-700 hover:bg-emerald-800 text-white px-5 py-2.5 rounded-xl text-sm font-medium shadow-sm transition">Build Your Planner</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="max-w-7xl mx-auto px-6 py-16 md:py-24 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+        <div>
+            <span class="text-emerald-700 font-semibold text-sm uppercase tracking-wider">Mindful Organization</span>
+            <h1 class="text-4xl md:text-5xl font-bold tracking-tight text-stone-900 mt-3 mb-6">
+                Design Your Custom Digital Planner & Health Dashboard
+            </h1>
+            <p class="text-stone-600 text-lg leading-relaxed mb-8">
+                Empower your student life, financial tracking, and healthy recipe meal prep with hyperlinked PDF printables tailored entirely to your aesthetic and lifestyle.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4">
+                <a href="#builder" class="bg-stone-900 hover:bg-stone-800 text-white text-center px-8 py-3.5 rounded-xl font-medium shadow transition">Start Customizing</a>
+                <a href="#tiers" class="border border-stone-300 hover:border-stone-400 text-stone-700 text-center px-8 py-3.5 rounded-xl font-medium transition">View Pricing</a>
+            </div>
+        </div>
+        <div class="bg-emerald-900/5 p-8 rounded-3xl border border-emerald-900/10">
+            <div class="bg-white p-6 rounded-2xl shadow-sm border border-stone-100 space-y-4">
+                <div class="flex justify-between items-center border-b pb-4">
+                    <h3 class="font-bold text-stone-800">Live Habit & Hydration Tracker</h3>
+                    <span class="text-xs bg-amber-100 text-amber-800 px-2 py-0.5 rounded font-medium">Interactive Demo</span>
+                </div>
+                <p class="text-sm text-stone-600">Meet your virtual wellness companion who cheers you on as you check off study blocks, water goals, and daily workouts!</p>
+                <div class="bg-stone-50 p-4 rounded-xl flex items-center justify-between">
+                    <div>
+                        <p id="pet-name" class="font-bold text-sm text-stone-800">💧 Aqua the Hydration Otter</p>
+                        <p id="pet-status" class="text-xs text-emerald-600 font-medium mt-0.5">Hydration Goal: 0 / 8 Glasses</p>
+                    </div>
+                    <button onclick="feedPet()" class="bg-emerald-700 hover:bg-emerald-800 text-white text-xs px-4 py-2 rounded-lg font-medium transition">+ Drink Water</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Popular Features Section -->
+    <section id="features" class="bg-white py-20 border-y border-stone-200">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <h2 class="text-3xl font-bold text-stone-900">Popular Features Customers Love</h2>
+                <p class="text-stone-600 mt-2">Engineered to reduce decision fatigue and boost productivity across daily routines.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="p-8 rounded-2xl bg-stone-50 border border-stone-100">
+                    <div class="w-12 h-12 bg-emerald-100 text-emerald-700 rounded-xl flex items-center justify-center font-bold text-lg mb-4">01</div>
+                    <h3 class="font-bold text-lg text-stone-900 mb-2">Student & Finance Hub</h3>
+                    <p class="text-stone-600 text-sm leading-relaxed">Structured layouts for assignment tracking, GPA calculation, monthly budgeting, and debt snowball monitoring.</p>
+                </div>
+                <div class="p-8 rounded-2xl bg-stone-50 border border-stone-100">
+                    <div class="w-12 h-12 bg-emerald-100 text-emerald-700 rounded-xl flex items-center justify-center font-bold text-lg mb-4">02</div>
+                    <h3 class="font-bold text-lg text-stone-900 mb-2">Healthy Recipes & Meal Prep</h3>
+                    <p class="text-stone-600 text-sm leading-relaxed">Ingredient breakdown guides, macro-friendly weekly planners, and built-in digital recipe card templates.</p>
+                </div>
+                <div class="p-8 rounded-2xl bg-stone-50 border border-stone-100">
+                    <div class="w-12 h-12 bg-emerald-100 text-emerald-700 rounded-xl flex items-center justify-center font-bold text-lg mb-4">03</div>
+                    <h3 class="font-bold text-lg text-stone-900 mb-2">Drag-and-Drop Stickers</h3>
+                    <p class="text-stone-600 text-sm leading-relaxed">Pre-cropped PNG sticker files included for Goodnotes and Notability to accent your days with aesthetic functionality.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Custom Planner Builder Section -->
+    <section id="builder" class="py-20 max-w-4xl mx-auto px-6">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-bold text-stone-900">Custom Planner Builder</h2>
+            <p class="text-stone-600 mt-2">Configure your ideal PDF printable layout below.</p>
+        </div>
+        
+        <div class="bg-white p-8 md:p-10 rounded-3xl shadow-sm border border-stone-200 space-y-8">
+            <!-- Style Selection -->
+            <div>
+                <label class="block text-sm font-bold text-stone-800 mb-3">1. Select Visual Design Style</label>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                    <button type="button" onclick="selectStyle('Fun', this)" class="style-btn p-4 rounded-xl border-2 border-emerald-600 bg-emerald-50 text-emerald-900 font-medium text-sm text-center transition">🎨 Fun & Vibrant</button>
+                    <button type="button" onclick="selectStyle('Professional', this)" class="style-btn p-4 rounded-xl border-2 border-stone-200 hover:border-stone-300 text-stone-700 font-medium text-sm text-center transition">💼 Professional</button>
+                    <button type="button" onclick="selectStyle('Classic', this)" class="style-btn p-4 rounded-xl border-2 border-stone-200 hover:border-stone-300 text-stone-700 font-medium text-sm text-center transition">🏛️ Classic Minimal</button>
+                    <button type="button" onclick="selectStyle('Basic', this)" class="style-btn p-4 rounded-xl border-2 border-stone-200 hover:border-stone-300 text-stone-700 font-medium text-sm text-center transition">⚡ Basic Clean</button>
+                </div>
+            </div>
+
+            <!-- Color Palettes -->
+            <div>
+                <label class="block text-sm font-bold text-stone-800 mb-3">2. Select Color Palette</label>
+                <div class="grid grid-cols-3 gap-4">
+                    <button type="button" onclick="selectColor('Sage & Botanical', this)" class="color-btn p-3 rounded-xl border-2 border-emerald-600 bg-emerald-50 text-xs font-semibold text-stone-800">🌿 Sage Botanical</button>
+                    <button type="button" onclick="selectColor('Sunset Warmth', this)" class="color-btn p-3 rounded-xl border-2 border-stone-200 text-xs font-semibold text-stone-800">🌅 Sunset Warmth</button>
+                    <button type="button" onclick="selectColor('Midnight Dark Mode', this)" class="color-btn p-3 rounded-xl border-2 border-stone-200 text-xs font-semibold text-stone-800">🌙 Midnight Dark</button>
+                </div>
+            </div>
+
+            <!-- Modules / Add-ons -->
+            <div>
+                <label class="block text-sm font-bold text-stone-800 mb-3">3. Include Sections & Modules</label>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm">
+                    <label class="flex items-center space-x-3 p-3 rounded-xl border border-stone-200 bg-stone-50 cursor-pointer">
+                        <input type="checkbox" checked class="rounded text-emerald-600 focus:ring-emerald-500 w-4 h-4" value="Student">
+                        <span>🎓 Student Assignment & Exam Tracker</span>
+                    </label>
+                    <label class="flex items-center space-x-3 p-3 rounded-xl border border-stone-200 bg-stone-50 cursor-pointer">
+                        <input type="checkbox" checked class="rounded text-emerald-600 focus:ring-emerald-500 w-4 h-4" value="Finance">
+                        <span>💰 Budgeting & Expense Sheets</span>
+                    </label>
+                    <label class="flex items-center space-x-3 p-3 rounded-xl border border-stone-200 bg-stone-50 cursor-pointer">
+                        <input type="checkbox" checked class="rounded text-emerald-600 focus:ring-emerald-500 w-4 h-4" value="Recipes">
+                        <span>🥗 Healthy Meal Prep & Grocery Guides</span>
+                    </label>
+                    <label class="flex items-center space-x-3 p-3 rounded-xl border border-stone-200 bg-stone-50 cursor-pointer">
+                        <input type="checkbox" checked class="rounded text-emerald-600 focus:ring-emerald-500 w-4 h-4" value="HydrationPet">
+                        <span>🐾 Hydration Companion Pet Theme</span>
+                    </label>
+                </div>
+            </div>
+
+            <!-- Summary Output box -->
+            <div class="bg-stone-50 p-6 rounded-2xl border border-stone-200 space-y-2">
+                <h4 class="font-bold text-stone-900 text-sm">Your Configuration Summary:</h4>
+                <p id="summary-text" class="text-xs text-stone-600">Style: Fun & Vibrant | Color: Sage Botanical | Modules: Student, Finance, Recipes, HydrationPet</p>
+            </div>
+
+            <button onclick="alert('Configuration saved! Ready for checkout integration.')" class="w-full bg-emerald-700 hover:bg-emerald-800 text-white font-medium py-4 rounded-xl shadow transition">
+                Proceed to Instant PDF Download ($14.99)
+            </button>
+        </div>
+    </section>
+
+    <!-- Pricing Tiers Section -->
+    <section id="tiers" class="bg-white py-20 border-t border-stone-200">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <h2 class="text-3xl font-bold text-stone-900">Simple, Transparent Editions</h2>
+                <p class="text-stone-600 mt-2">Choose the depth of organization that fits your goals.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Basic Tier -->
+                <div class="border border-stone-200 rounded-3xl p-8 flex flex-col justify-between">
+                    <div>
+                        <h3 class="font-bold text-lg text-stone-900">Basic Edition</h3>
+                        <p class="text-stone-500 text-sm mt-1">Essential layouts for simple day-to-day scheduling.</p>
+                        <p class="text-4xl font-bold text-stone-900 mt-6 mb-6">$8<span class="text-sm font-normal text-stone-500"> / one-time</span></p>
+                        <ul class="space-y-3 text-sm text-stone-600">
+                            <li>✓ PDF Printable Daily & Monthly Views</li>
+                            <li>✓ Basic Color Selection</li>
+                            <li>✓ Standard Note Pages</li>
+                        </ul>
+                    </div>
+                    <button class="mt-8 w-full border border-stone-300 hover:border-stone-400 font-medium py-3 rounded-xl transition">Select Basic</button>
+                </div>
+
+                <!-- Medium Tier -->
+                <div class="border-2 border-emerald-600 rounded-3xl p-8 flex flex-col justify-between relative bg-emerald-50/20">
+                    <span class="absolute -top-3.5 left-1/2 transform -translate-x-1/2 bg-emerald-700 text-white text-xs px-3 py-1 rounded-full font-medium">Most Popular</span>
+                    <div>
+                        <h3 class="font-bold text-lg text-stone-900">Medium Edition</h3>
+                        <p class="text-stone-500 text-sm mt-1">Balanced student, wellness, and financial tools.</p>
+                        <p class="text-4xl font-bold text-stone-900 mt-6 mb-6">$14<span class="text-sm font-normal text-stone-500"> / one-time</span></p>
+                        <ul class="space-y-3 text-sm text-stone-600">
+                            <li>✓ Everything in Basic</li>
+                            <li>✓ Student Trackers & Budget Sheets</li>
+                            <li>✓ Healthy Meal Prep & Ingredient Guides</li>
+                            <li>✓ Starter Digital Sticker Pack</li>
+                        </ul>
+                    </div>
+                    <button class="mt-8 w-full bg-emerald-700 hover:bg-emerald-800 text-white font-medium py-3 rounded-xl transition">Select Medium</button>
+                </div>
+
+                <!-- Premium Tier -->
+                <div class="border border-stone-200 rounded-3xl p-8 flex flex-col justify-between">
+                    <div>
+                        <h3 class="font-bold text-lg text-stone-900">Premium Ultimate</h3>
+                        <p class="text-stone-500 text-sm mt-1">All styles, complete customization, and bonus widgets.</p>
+                        <p class="text-4xl font-bold text-stone-900 mt-6 mb-6">$24<span class="text-sm font-normal text-stone-500"> / one-time</span></p>
+                        <ul class="space-y-3 text-sm text-stone-600">
+                            <li>✓ All 4 Design Styles (Fun, Pro, Classic, Basic)</li>
+                            <li>✓ Full Custom Builder Access</li>
+                            <li>✓ 1,000+ Aesthetic Digital Stickers</li>
+                            <li>✓ Interactive Hydration Pet Companion System</li>
+                        </ul>
+                    </div>
+                    <button class="mt-8 w-full border border-stone-300 hover:border-stone-400 font-medium py-3 rounded-xl transition">Select Premium</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Legal Disclaimers Section -->
+    <footer class="bg-stone-900 text-stone-400 py-16 text-xs leading-relaxed">
+        <div class="max-w-7xl mx-auto px-6 space-y-6">
+            <div class="border-b border-stone-800 pb-6">
+                <h4 class="font-bold text-stone-200 text-sm mb-2">Legal Disclaimers & Terms of Use</h4>
+                <p class="mb-3">
+                    <strong>1. Digital Product Policy:</strong> All planners, printables, templates, and digital stickers sold on Purely Planned are digital files delivered via instant download. Due to the digital nature of these products, all sales are final, and we do not offer refunds, exchanges, or cancellations. Please review product descriptions carefully before purchase.
+                </p>
+                <p class="mb-3">
+                    <strong>2. Personal Use License:</strong> Purchasing grants you a single-user, non-transferable license for personal use only. Sharing, reselling, redistributing, or altering files for commercial gain or public uploading is strictly prohibited under federal copyright laws.
+                </p>
+                <p class="mb-3">
+                    <strong>3. Health & Financial Information Disclaimer:</strong> The wellness, hydration tracking, healthy recipes, meal prep guidance, and financial budgeting templates provided within our planners are for informational and organizational purposes only. They do not constitute professional medical advice, nutritional prescriptions, or certified financial planning. Always consult qualified professionals regarding health or financial decisions.
+                </p>
+            </div>
+            <div class="flex flex-col sm:flex-row items-center justify-between text-stone-500 pt-2">
+                <p>&copy; 2026 Purely Planned Studio. All rights reserved.</p>
+                <p class="mt-2 sm:mt-0">Designed for Seamless Vercel & GitHub Deployment</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript Interactive Logic -->
+    <script>
+        let selectedStyle = 'Fun & Vibrant';
+        let selectedColor = 'Sage Botanical';
+
+        function selectStyle(styleName, btn) {
+            document.querySelectorAll('.style-btn').forEach(b => {
+                b.classList.remove('border-emerald-600', 'bg-emerald-50', 'text-emerald-900');
+                b.classList.add('border-stone-200', 'text-stone-700');
+            });
+            btn.classList.remove('border-stone-200', 'text-stone-700');
+            btn.classList.add('border-emerald-600', 'bg-emerald-50', 'text-emerald-900');
+            selectedStyle = styleName;
+            updateSummary();
+        }
+
+        function selectColor(colorName, btn) {
+            document.querySelectorAll('.color-btn').forEach(b => {
+                b.classList.remove('border-emerald-600', 'bg-emerald-50');
+                b.classList.add('border-stone-200');
+            });
+            btn.classList.remove('border-stone-200');
+            btn.classList.add('border-emerald-600', 'bg-emerald-50');
+            selectedColor = colorName;
+            updateSummary();
+        }
+
+        function updateSummary() {
+            document.getElementById('summary-text').innerText = `Style: ${selectedStyle} | Color: ${selectedColor} | Ready for customization`;
+        }
+
+        let waterCount = 0;
+        const pets = [
+            { name: "💧 Aqua the Hydration Otter", levelMsg: "Splashing with energy!" },
+            { name: "🦊 Pip the Study Fox", levelMsg: "Focused and ready to learn!" },
+            { name: "🐼 Bamboo the Wellness Panda", levelMsg: "Balanced and mindful!" }
+        ];
+        let currentPetIndex = 0;
+
+        function feedPet() {
+            waterCount++;
+            if (waterCount >= 8) {
+                waterCount = 0;
+                currentPetIndex = (currentPetIndex + 1) % pets.length;
+                alert('🎉 Hydration Goal Achieved! Your companion evolved and unlocked a new reward sticker!');
+            }
+            document.getElementById('pet-name').innerText = pets[currentPetIndex].name;
+            document.getElementById('pet-status').innerText = `Hydration Goal: ${waterCount} / 8 Glasses - ${pets[currentPetIndex].levelMsg}`;
+        }
+    </script>
+</body>
+</html>
